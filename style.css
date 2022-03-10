@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #3e5bff;
+  z-index: -1;
+  transition: 1s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 47%);
+}
+
+.header .col{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.header .col .logo h1{
+  font-size: 35px;
+  color: #fff;
+}
+
+.header .col .menu{
+  display: flex;
+  align-items: center;
+}
+
+.header .col .menu ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header .col .menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header .col .menu ul li a:hover{
+  color: black;
+}
+
+.info{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.info .data{
+  max-width: 340px;
+}
+
+.info .data h2{
+  font-size: 55px;
+}
+
+.info .data h2 span{
+  font-size: 55px;
+  color: red;
+  font-weight: bold;
+  transition: 0.5;
+  cursor: pointer;
+}
+
+.info .data h2 span:hover{
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+.info .data p{
+  margin-top: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info .data h2 a{
+  text-decoration: none;
+  color: red;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.card{
+  margin-top: 20px;
+}
+
+.card .img{
+  margin-right: 80px;
+}
